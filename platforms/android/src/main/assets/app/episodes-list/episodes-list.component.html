@@ -1,0 +1,8 @@
+<ListView [items]="episodes" (itemTap)="episodeTap($event)">
+    <template let-item="item">
+        <StackLayout>
+            <Image [src]="item.thumbnail" stretch="aspectFill"></Image>
+            <Label [text]="item.name"></Label>
+        </StackLayout>
+    </template>
+</ListView>
